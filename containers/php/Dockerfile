@@ -5,6 +5,10 @@ RUN apt-get update \
   && docker-php-ext-install zip opcache \
   && docker-php-ext-install pdo_mysql
 
+RUN set -ex apk --no-cache add postgresql-dev libpq-dev
+RUN apt-get install -y libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
+
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 RUN curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list
 RUN apt-get update

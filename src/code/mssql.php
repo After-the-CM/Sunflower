@@ -1,7 +1,9 @@
 <?php
 try {
     $db = new PDO('sqlsrv:Server=mssql;database=sunflower', 'sa', 'P@ssw0rd');
+    // $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $sql = 'SELECT name,pass FROM users WHERE name=\'' . $_GET["input"] . '\';';
+    $result = $db->query($sql);
 } catch (PDOException $e) {
     echo $e->getMessage();
     exit;
@@ -15,16 +17,19 @@ try {
 </head>
 
 <body>
+    <p>plz input <span style="color:red;">'waitfor delay '0:0:10';--</span></p>
     <form method="GET">
-        name <input type="text" name="input" size="50" id="input"><br>
-        <input type="button" onclick="document.getElementById('input').value = '\'or 1=1\;--';" value="attack"><input type="submit" value="送信">
+        name <input type="text" name="input" size="50" id="input">
+            <input type="submit" value="送信">
     </form>
     <hr>
     <?
     echo "<p>$sql</p><table border=\"1\"><tr><th>name</th><th>pass</th>";
-        foreach($db->query($sql) as $row) {
-            echo("<tr><td>" . $row["name"] . "</td><td>" . $row["pass"]. "</tt></tr>");
+    if (!empty($result)) {
+        foreach ($result as $value) {
+            echo "<tr><td>" . $value["name"] . "</td><td>" . $value["pass"] . "</tt></tr>";
         }
+    }
     ?>
     </table>
 </body>
