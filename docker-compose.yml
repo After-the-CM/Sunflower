@@ -12,22 +12,28 @@ services:
   app:
     build: ./containers/php/
     depends_on:
-      - db
+      - mysql
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html
-  db:
+  mysql:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: docker
-      MYSQL_DATABASE: docker
-      MYSQL_USER: docker
-      MYSQL_PASSWORD: docker
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: sunflower
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
     ports:
       - "3306:3306"
     volumes:
       - ./containers/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
-  smtp:
-    image: sj26/mailcatcher
+  mssql:
+    build: ./containers/mssql
     ports:
-      - "1080:1080"
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+      - SA_PASSWORD=P@ssw0rd
+    volumes: 
+      - ./containers/mssql:/docker-entrypoint-initdb.d
