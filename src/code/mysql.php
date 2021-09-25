@@ -19,7 +19,7 @@ try {
 </head>
 
 <body>
-    <p>plz input <span style="color:red;">' or sleep(10)#</span></p>
+    <p>plz input <span style="color:red;">'</span></p>
     <form method="GET">
         name <input type="text" name="input" size="50" id="input">
         <input type="submit" value="送信">
