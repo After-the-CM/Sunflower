@@ -1,7 +1,7 @@
 <?php
 try {
     $db = new PDO('pgsql:host=pgsql;', 'root', 'toor');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    // $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $sql = 'SELECT name,pass FROM users WHERE name=\'' . $_GET["input"] . '\';';
     $result = $db->query($sql);
 } catch (PDOException $e) {
@@ -17,6 +17,7 @@ try {
 </head>
 
 <body>
+    <p>plz input <span style="color:red;">' union select null,null from pg_sleep(10)--</span></p>
     <form method="GET">
         name <input type="text" name="input" size="50" id="input">
         <input type="submit" value="送信">
