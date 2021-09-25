@@ -20,7 +20,7 @@ try {
     <p>plz input <span style="color:red;">'waitfor delay '0:0:10';--</span></p>
     <form method="GET">
         name <input type="text" name="input" size="50" id="input">
-            <input type="submit" value="送信">
+        <input type="submit" value="送信">
     </form>
     <hr>
     <?
