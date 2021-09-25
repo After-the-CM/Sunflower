@@ -1,7 +1,7 @@
 <?php
 try {
     $db = new PDO('mysql:host=mysql;dbname=sunflower', 'user', 'pass');
-    // $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $sql = 'SELECT name,pass FROM users WHERE name=\'' . $_GET["input"] . '\';';
     $stmt = $db->prepare($sql);
     $stmt->execute();

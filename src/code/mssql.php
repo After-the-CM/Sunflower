@@ -1,7 +1,7 @@
 <?php
 try {
     $db = new PDO('sqlsrv:Server=mssql;database=sunflower', 'sa', 'P@ssw0rd');
-    // $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $sql = 'SELECT name,pass FROM users WHERE name=\'' . $_GET["input"] . '\';';
     $result = $db->query($sql);
 } catch (PDOException $e) {
