@@ -7,16 +7,8 @@
     <title>Sunflower</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="mysql.php">mysql</a>
-        </li>
-        <li>
-            <a href="mssql.php">mssql</a>
-        </li>
-        <li>
-            <a href="pgsql.php">pgsql</a>
-        </li>
-    </ul>
+    <li>
+        <a href="TBSQLi/">Time Based SQL injection</a>
+    </li>
 </body>
 </html>
