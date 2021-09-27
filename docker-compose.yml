@@ -16,18 +16,3 @@ services:
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html
-  db:
-    image: mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: docker
-      MYSQL_DATABASE: docker
-      MYSQL_USER: docker
-      MYSQL_PASSWORD: docker
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./containers/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
-  smtp:
-    image: sj26/mailcatcher
-    ports:
-      - "1080:1080"
