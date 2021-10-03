@@ -10,11 +10,5 @@
     <li>
         <a href="OSCi/">OS Commnad injection</a>
     </li>
-    <li>
-        <a href="TBSQLi/">Time Based SQL injection</a>
-    </li>
-    <li>
-        <a href="EBSQLi/">Error Based SQL injection</a>
-    </li>
 </body>
 </html>
