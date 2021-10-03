@@ -1,3 +1,6 @@
+<?php
+setcookie("input", "aaa")
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +31,9 @@
         </li>
         <li>
             <a href="./OSCiBV.php">OSCi in Body Value</a>
+        </li>
+        <li>
+            <a href="./OSCiCookie.php">OSCi in cookie</a>
         </li>
     </ul>
 </body>
