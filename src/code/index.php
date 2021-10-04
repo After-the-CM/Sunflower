@@ -8,7 +8,7 @@
 </head>
 <body>
     <li>
-        <a href="dir/">[title]</a>
+        <a href="xss/">XSS</a>
     </li>
 </body>
 </html>
