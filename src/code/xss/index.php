@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunflower</title>
+    <title>rel trav</title>
 </head>
 
 <body>
     <li>
-        <a href="OSCi/">OS Commnad injection</a>
+        <a href="refXSS.php">simple reflect XSS</a>
     </li>
     <li>
-        <a href="TBSQLi/">Time Based SQL injection</a>
+        <a href="inputXSS.php">input Tab XSS</a>
     </li>
     <li>
-        <a href="EBSQLi/">Error Based SQL injection</a>
+        <a href="textareaXSS.php">textarea XSS</a>
     </li>
     <li>
-        <a href="dirtrav/">Directory Traversal</a>
+        <a href="form.php">form for stored XSS</a>
     </li>
     <li>
-        <a href="xss/">XSS</a>
+        <a href="storedXSS.php">Stored XSS</a>
     </li>
 </body>
 
