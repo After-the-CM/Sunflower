@@ -8,16 +8,10 @@
 </head>
 <body>
     <li>
-        <a href="OSCi/">OS Commnad injection</a>
+        <a href="abs.php">dir trav by absolute path</a>
     </li>
     <li>
-        <a href="TBSQLi/">Time Based SQL injection</a>
-    </li>
-    <li>
-        <a href="EBSQLi/">Error Based SQL injection</a>
-    </li>
-    <li>
-        <a href="dirtrav/">Directory Traversal</a>
+        <a href="rel.php">dir trav by relative path</a>
     </li>
 </body>
-</html>
+</html> 
