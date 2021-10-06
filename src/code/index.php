@@ -24,6 +24,9 @@
     <li>
         <a href="xss/">XSS</a>
     </li>
+    <li>
+        <a href="openRedirect/">Open Redirect</a>
+    </li>
 </body>
 
 </html>
