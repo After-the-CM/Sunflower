@@ -8,7 +8,7 @@
 </head>
 <body>
     <li>
-        <a href="dir/">[title]</a>
+        <a href="dirList/">Directory Listing</a>
     </li>
 </body>
 </html>
