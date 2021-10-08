@@ -8,7 +8,7 @@
 
 <body>
     <?
-    print file_get_contents('log');
+    print file_get_contents('/tmp/log');
     ?>
     </table>
 </body>

@@ -14,9 +14,9 @@
     </form>
     <hr>
     <?
-    $current = file_get_contents('log');
+    $current = file_get_contents('/tmp/log');
     $current .= $_POST["input"];
-    file_put_contents('log', $current);
+    file_put_contents('/tmp/log', $current);
     ?>
     </table>
 </body>
