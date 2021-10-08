@@ -27,6 +27,9 @@
     <li>
         <a href="openRedirect/">Open Redirect</a>
     </li>
+    <li>
+        <a href="dirList/">Directory Listing</a>
+    </li>
 </body>
 
 </html>
