@@ -13,10 +13,7 @@
         <a href="OSCi/">OS Commnad injection</a>
     </li>
     <li>
-        <a href="TBSQLi/">Time Based SQL injection</a>
-    </li>
-    <li>
-        <a href="EBSQLi/">Error Based SQL injection</a>
+        <a href="sqli/">SQL injection</a>
     </li>
     <li>
         <a href="dirtrav/">Directory Traversal</a>
