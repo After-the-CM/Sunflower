@@ -13,4 +13,5 @@ services:
     build: ./containers/php/
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
+      - ./containers/php/log:/tmp/log
       - ./src/code/:/var/www/html
