@@ -27,6 +27,9 @@
     <li>
         <a href="dirList/">Directory Listing</a>
     </li>
+    <li>
+        <a href="csrf/">csrf</a>
+    </li>
 </body>
 
 </html>
