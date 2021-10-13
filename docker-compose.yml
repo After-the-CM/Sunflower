@@ -14,3 +14,17 @@ services:
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: sunflower
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      LANG: ja_JP.UTF-8
+      LANGUAGE: ja_JP:ja
+      LC_ALL: ja_JP.UTF-8
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./containers/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
