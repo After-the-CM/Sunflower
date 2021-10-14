@@ -10,7 +10,7 @@
 
 <body>
     <li>
-        <a href="OSCi/">OS Commnad injection</a>
+        <a href="osci/">OS Commnad injection</a>
     </li>
     <li>
         <a href="sqli/">SQL injection</a>
