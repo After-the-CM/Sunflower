@@ -8,7 +8,7 @@
 </head>
 <body>
     <li>
-        <a href="OSCi/">OS Commnad injection</a>
+        <a href="osci/">OS Commnad injection</a>
     </li>
 </body>
 </html>
