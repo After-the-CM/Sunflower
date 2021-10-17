@@ -16,6 +16,12 @@ services:
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html
+  hhi:
+    image: php:5.3.29-apache
+    ports:
+      - "18081:80"
+    volumes:
+      - ./src/hhi/:/var/www/html
   mysql:
     image: mysql
     environment:
