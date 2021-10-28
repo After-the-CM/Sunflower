@@ -8,7 +8,7 @@
 </head>
 <body>
     <li>
-        <a href="dirList/">Directory Listing</a>
+        <a href="dirList/listed.php">Directory Listing</a>
     </li>
 </body>
 </html>
