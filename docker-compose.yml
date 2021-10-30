@@ -1,16 +1,8 @@
 version: '3'
 services:
   web:
-    image: nginx
-    depends_on:
-      - app
+    image: nouphet/docker-php4
     ports:
       - "18080:80"
     volumes:
-      - ./src/default.conf:/etc/nginx/conf.d/default.conf
-      - ./src/code/:/var/www/html
-  app:
-    build: ./containers/php/
-    volumes:
-      - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html

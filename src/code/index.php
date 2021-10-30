@@ -8,7 +8,10 @@
 </head>
 <body>
     <li>
-        <a href="dir/">[title]</a>
+        <a href="./headerinjection.php">HTTP Header Injection</a>
+    </li>
+    <li>
+      <a href="./info.php">phpinfo</a>
     </li>
 </body>
 </html>
