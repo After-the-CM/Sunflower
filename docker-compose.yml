@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  headerinjection:
     image: nouphet/docker-php4
     ports:
       - "18080:80"
