@@ -31,7 +31,7 @@
         <a href="csrf/">csrf</a>
     </li>
     <li>
-        <a href="http://localhost:18081/">HTTP Header injection (Cross-Origin)</a>
+        <a href="http://localhost:18080/hhi/?url=/">HTTP Header injection</a>
     </li>
 </body>
 

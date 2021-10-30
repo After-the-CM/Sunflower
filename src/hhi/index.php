@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTTP Header injection</title>
-</head>
-<body>
-    <li>
-        <a href="hhi.php?url=/">HTTP Header injection</a>
-    </li>
-</body>
-</html>
+<?
+if (isset($_GET["url"])) {
+    header('Location: ' . $_GET["url"]);
+}
+?>
+<p>plz redirect <span style="color:red;">?url=a%0D%0ASet-Cookie: Himawari=pwned;</span></p>
