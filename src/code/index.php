@@ -8,7 +8,8 @@
 </head>
 <body>
     <li>
-        <a href="dir/">[title]</a>
+        <a href="%a" >[title]</a>
+        <a href="http://localhost" >[title]</a>
     </li>
 </body>
 </html>
