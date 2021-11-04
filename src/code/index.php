@@ -10,6 +10,7 @@
     <li>
         <a href="%a" >[title]</a>
         <a href="http://localhost" >[title]</a>
+        <a href="./hoge" >[title]</a>
     </li>
 </body>
 </html>
