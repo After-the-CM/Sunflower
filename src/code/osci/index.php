@@ -38,7 +38,12 @@ setcookie("input", "aaa")
         <li>
             <a href="./form.php">form for Redirect</a>
         </li>
-
+        <li>
+            <a href="./OSCiML.php">OSCi must login</a>
+        </li>
+        <li>
+            <a href="./login.php">login</a>
+        </li>
     </ul>
 </body>
 
