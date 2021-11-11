@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rel trav</title>
+    <title>XSS</title>
 </head>
 
 <body>
@@ -23,6 +23,12 @@
     </li>
     <li>
         <a href="storedXSS.php">Stored XSS</a>
+    </li>
+    <li>
+        <a href="imgXSS.php">img XSS</a>
+    </li>
+    <li>
+        <a href="onXSS.php">onXX XSS</a>
     </li>
 </body>
 
