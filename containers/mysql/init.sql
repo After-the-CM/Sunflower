@@ -15,7 +15,8 @@ create table memos (
     name char(50),
     memo char(50)
 );
-insert into memos values ("y0d3n", "hey"); 
-insert into memos values ("yoden", "hello."); 
+insert into memos values ("y0d3n", "I'm yoden"); 
+insert into memos values ("Gopher", "Don't Panic"); 
+insert into memos values ("青い鳥", "いまどうしてる？"); 
 insert into memos values ("ぼくはまちちゃん！", "こんにちはこんにちは!!"); 
 
