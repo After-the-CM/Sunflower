@@ -41,7 +41,7 @@ try {
         </tr>
         <?
         foreach ($result as $value) {
-            print "<tr><td>$value[name]</td><td>$value[memo]</td></tr>";
+            print "<tr><td>" . htmlspecialchars($value["name"]) . "</td><td>" . htmlspecialchars($value["memo"]) . "</td></tr>";
         }
         ?>
     </table>
