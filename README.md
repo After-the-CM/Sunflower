@@ -1,8 +1,27 @@
 # Sunflower
 
-🌻🌻🌻Vulnerabe Web Application🌻🌻🌻
+🌻🌻🌻Vulnerabe Web Application for Himawari🌻🌻🌻
 
-Sunflowerは以下の5つのポートを使用します。  
+SunflowerはHimawariのテスト用に作製した脆弱なWebアプリケーションです。  
+以下8種類の脆弱性を再現しています。
+
+- Cross-Site Scripting(Reflected・Stored)
+- SQL Injection
+- Cross-Site Request Forgery
+- OS Command Injection
+- Directory Traversal
+- Open Redirect
+- HTTP Header Injection
+- Directory Listing
+
+対象の実装次第でどこでも脆弱性は生まれ得るので、  
+OS Command InjectionをURL、クエリパラメータ(name, value両方)、Cookie、User Agent、Referer、POSTボディ(name, value両方)に実装しました。
+
+その他ログイン必須ページやセッションに保存されたデータでの攻撃など、幅広いシナリオに対応しています。
+
+## ports
+
+以下の5つのポートを使用します。  
 
 - 18080 nginx
 - 18081 nginx-php (very old)
