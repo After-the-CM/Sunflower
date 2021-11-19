@@ -39,7 +39,7 @@ services:
   mssql:
     build: ./containers/mssql
     ports:
-      - 1433:1433
+      - "1433:1433"
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_PID=Express
@@ -49,7 +49,7 @@ services:
   pgsql:
     image: postgres
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
       - ./containers/pgsql:/docker-entrypoint-initdb.d
     environment:
