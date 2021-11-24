@@ -9,7 +9,7 @@
 <body>
     <form action="#" method="post">
         <input type="text">
-        <input type="">
+        <input>
         <input type="submit">
     </form>
 </body>
