@@ -7,9 +7,9 @@
     <title>Sunflower</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <input type="text">
-        <input>
+    <form method="post">
+        <input type="text" name="a">
+        <input name="b">
         <input type="submit">
     </form>
 </body>
