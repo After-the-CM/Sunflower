@@ -7,8 +7,10 @@
     <title>Sunflower</title>
 </head>
 <body>
-    <li>
-        <a href="dir/">[title]</a>
-    </li>
+    <form action="#" method="post">
+        <input type="text">
+        <input type="">
+        <input type="submit">
+    </form>
 </body>
 </html>
