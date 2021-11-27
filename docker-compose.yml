@@ -16,12 +16,6 @@ services:
     volumes:
       - ./containers/php/php.ini:/usr/local/etc/php/php.ini
       - ./src/code/:/var/www/html
-  hhi:
-    image: nouphet/docker-php4
-    ports:
-      - "18081:80"
-    volumes:
-      - ./src/hhi/:/var/www/html
   mysql:
     image: mysql
     environment:
@@ -36,23 +30,3 @@ services:
       - "3306:3306"
     volumes:
       - ./containers/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
-  mssql:
-    build: ./containers/mssql
-    ports:
-      - "1433:1433"
-    environment:
-      - ACCEPT_EULA=Y
-      - MSSQL_PID=Express
-      - SA_PASSWORD=P@ssw0rd
-    volumes: 
-      - ./containers/mssql/init.sql:/docker-entrypoint-initdb.d/init.sql
-  pgsql:
-    image: postgres
-    ports:
-      - "5432:5432"
-    volumes:
-      - ./containers/pgsql:/docker-entrypoint-initdb.d
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: toor
-      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"

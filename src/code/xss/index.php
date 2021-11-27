@@ -10,15 +10,6 @@
 
 <body>
     <li>
-        <a href="refXSS.php">simple reflect XSS</a>
-    </li>
-    <li>
-        <a href="inputXSS.php">input Tab XSS</a>
-    </li>
-    <li>
-        <a href="textareaXSS.php">textarea XSS</a>
-    </li>
-    <li>
         <a href="form.php">form for stored XSS</a>
     </li>
     <li>

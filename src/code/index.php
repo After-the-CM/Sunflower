@@ -10,31 +10,7 @@
 
 <body>
     <li>
-        <a href="osci/">OS Commnad injection</a>
-    </li>
-    <li>
-        <a href="sqli/">SQL injection</a>
-    </li>
-    <li>
-        <a href="dirtrav/">Directory Traversal</a>
-    </li>
-    <li>
         <a href="xss/">XSS</a>
-    </li>
-    <li>
-        <a href="openRedirect/">Open Redirect</a>
-    </li>
-    <li>
-        <a href="dirList/">Directory Listing</a>
-    </li>
-    <li>
-        <a href="csrf/">csrf</a>
-    </li>
-    <li>
-        <a href="hhi/?url=/">HTTP Header injection</a>
-    </li>
-    <li>
-        <a href="http://example.com/">Out of Origin</a>
     </li>
 </body>
 
