@@ -18,6 +18,10 @@ if (!empty($_POST["input"])) {
     }
 
 ?>
+    <?
+    print file_get_contents('/tmp/log');
+    ?>
+ 
     <hr>
     <?
     $current = file_get_contents('/tmp/log');
