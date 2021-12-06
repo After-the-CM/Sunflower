@@ -12,6 +12,12 @@
         input <input type="text" name="input" size="50" id="input">
         <input type="submit" value="送信">
     </form>
+<?
+if (!empty($_POST["input"])) {
+        print $_POST["input"];
+    }
+
+?>
     <hr>
     <?
     $current = file_get_contents('/tmp/log');
