@@ -18,11 +18,7 @@ if (!empty($_POST["input"])) {
     }
 
 ?>
-    <?
-    print file_get_contents('/tmp/log');
-    ?>
- 
-    <hr>
+   <hr>
     <?
     $current = file_get_contents('/tmp/log');
     $current .= $_POST["input"];
