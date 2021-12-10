@@ -2,6 +2,10 @@
 
 🌻🌻🌻Vulnerabe Web Application for Himawari🌻🌻🌻
 
+![Sunflower_Gopher](./Sunflower_Gopher.png)
+
+The Gopher character is based on the Go mascot designed by Renée French.
+
 SunflowerはHimawariのテスト用に作製した脆弱なWebアプリケーションです。  
 以下8種類の脆弱性を再現しています。
 
