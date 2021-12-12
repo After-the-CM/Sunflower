@@ -8,7 +8,10 @@
 </head>
 <body>
     <li>
-        <a href="dir/">[title]</a>
+        <a href="sqli.php">sqli 500</a>
+    </li>
+    <li>
+        <a href="osci.php">osci</a>
     </li>
 </body>
 </html>
