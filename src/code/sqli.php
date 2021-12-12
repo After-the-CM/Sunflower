@@ -30,7 +30,7 @@ try {
     </form>
     <hr>
     <?
-    echo "<p>$sql</p><table border=\"1\"><tr><th>name</th><th>pass</th>";
+    echo "<table border=\"1\"><tr><th>name</th><th>pass</th>";
     foreach ($result as $value) {
         echo "<tr><td>$value[name] </td><td>$value[pass]</tt></tr>";
     }
